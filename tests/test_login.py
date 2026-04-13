@@ -1,9 +1,10 @@
 from pages.login_page import LoginPageClass
 
-def tcLogin(page):
+def test_login(page):
     page.goto('https://www.demoblaze.com/')
 
     login=LoginPageClass(page)
     login.loginFn('panvol', 'test@123')
+
      
     
